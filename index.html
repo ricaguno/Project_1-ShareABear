@@ -10,55 +10,28 @@
         *{
             font-family: cursive;
           }
-          body {
+        body {
           background-image: url("/img/bgpattern.jpg");
-          }
-          * {
-            padding: 0;
-            margin: 0;
-          }
+        }
 
-          header {
-            height: 98vh;
-          }
 
-          #skew {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            transform: skewY(-12deg);
-            transform-origin: 0;
-            background: #36D1DC;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, rgb(67,43,39), rgb(180,137,103)); 
+        @media only screen and (max-width: 900px) {
+          #dia{
+            font-size: 0;
+            border: none;
+          }
+        }
 
-            -webkit-box-shadow: -5px 3px 32px 4px rgba(184, 184, 184, 1);
-            -moz-box-shadow: -5px 3px 32px 4px rgba(184, 184, 184, 1);
-            box-shadow: -5px 3px 32px 4px rgba(184, 184, 184, 1);
-          }
-          .hero-text {
-            text-align: center;
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -350%);
-            color: white;
-          }
-
-          h1{
-            font-size: 60px;
-          }
     </style>
 </head>
   <!-- <body style="background-color: rgb(236, 212, 146);"> -->
     <body>
 
-    
       <!-- NAVIGATION BARRRRR -->
       <nav class="navbar navbar-expand-lg navbar-light p-2" style="background-color:rgb(67,43,39)">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">
-            <img src="img\logo.png" alt="ShareABare Logo" width="130" height="30" class="d-inline-block align-text-top"></a>
+            <img src="img\logo.png" alt="ShareABare Logo" width="180" height="45" class="d-inline-block align-text-top"></a>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,13 +42,13 @@
                 <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link">◆</a>
+                <a class="nav-link" id="dia">◆</a>
               </li>
               <li class="nav-item pe-5">
                 <a class="nav-link text-light" href="#">Shop</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link">◆</a>
+                <a class="nav-link" id="dia">◆</a>
               </li>
               <li class="nav-item pe-5">
                 <a class="nav-link text-light" href="#">Contact Us</a>
@@ -83,8 +56,8 @@
             </ul>
             <!-- BUTTONSSSS-->
             <form class="d-fluid">
-              <button class="btn btn-warning" type="submit">Login</button>
-              <button class="btn btn-warning" type="submit">SignUp</button>
+              <button class="btn" style="background-color:rgb(145,76,33)" type="submit">Login</button>
+              <button class="btn" style="background-color:rgb(255,208,167)" type="submit">SignUp</button>
             </form>
           </div>
         </div>
