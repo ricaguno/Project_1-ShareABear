@@ -13,14 +13,20 @@
         body {
           background-image: url("/img/bgpattern.jpg");
         }
-
-
         @media only screen and (max-width: 900px) {
           #dia{
             font-size: 0;
             border: none;
           }
         }
+        #divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:   rgb(67,43,39);
+        padding: 100px 20px 30px;
+        transform:skewY(-5deg)
+      }
 
     </style>
 </head>
@@ -42,13 +48,13 @@
                 <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link" id="dia">◆</a>
+                <a class="nav-link text-light" id="dia">◆</a>
               </li>
               <li class="nav-item pe-5">
                 <a class="nav-link text-light" href="#">Shop</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link" id="dia">◆</a>
+                <a class="nav-link text-light" id="dia">◆</a>
               </li>
               <li class="nav-item pe-5">
                 <a class="nav-link text-light" href="#">Contact Us</a>
@@ -178,6 +184,11 @@
               </div>
             </div>
           </section>
+
+          <div id="divider">
+            <footer class="pt-2">
+            </footer>
+            </div>
           
       
         <!-- CARD TEXT -->
@@ -224,9 +235,8 @@
       </div>
 </div>
 </section>
+</div>
 
-<footer class="pt-2" style="background-color: rgb(67,43,39)">
-</footer>
 <div class="row" style="background-color:rgb(255,208,167)">
     <!-- LOGISTICS -->
     <div class="col-3 p-4 ms-5">
@@ -249,12 +259,7 @@
         <img src="/img/mop/paymaya.png">
     </div>
     <!-- APPLICATION -->
-    <div class="col-3 p-4 ms-5">
-        <h6>Application</h6>
-        <img src="/img/app/apple.png">
-        <img src="/img/app/google.png">
-        <img src="/img/app/appgallery.png">
-    </div>
+    
 </div>
 
 <footer class="pt-1" style="background-color: rgb(67,43,39)">
