@@ -42,20 +42,9 @@
       padding: 100px 20px 30px;
       margin-bottom: 0px;
       transform: skewY(-5deg)
+      }
     }
-    header {
-      padding-top: 10px;
-      width: 100%;
-      height: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      z-index: 99;
-      /* box-shadow: 0 0 10px #000; */
-      background: rgba(255, 255, 255, 0.5);
-    }
-    }
+    
 
     #divider {
       display: flex;
@@ -79,6 +68,7 @@
       height: 100vh;
       background-position: center;
     }
+    
 
     header {
       padding-top: 10px;
@@ -91,102 +81,77 @@
       z-index: 99;
       /* box-shadow: 0 0 10px #000; */
       background: rgba(255, 255, 255, 0.5);
+      
     }
-
-    #chk1 {
-      display: none;
-    }
-
-    i {
-      color: #fff;
-      cursor: pointer;
-    }
-
+    
     header .logo {
       flex: 1;
-      color: #fff;
-
       margin-left: 50px;
-      text-transform: uppercase;
-      font-size: 15px;
     }
 
-    header .search-box {
-      flex: 1;
-      position: relative;
-    }
-
-    .search-box input {
-      width: 100%;
-      height: 40px;
-      border: none;
-      outline: none;
-      background: #f2f2f2;
-      border-radius: 30px;
-      color: gray;
-      font-size: 16px;
-      padding-left: 5px;
-      padding-right: 40px;
-      text-align: center;
-
-    }
-
+    /* NAV LINKS */
     header ul {
       flex: 2;
       display: flex;
       justify-content: space-evenly;
     }
-
-    header ul li {
-      list-style: none;
-    }
-
     header ul li a {
       text-decoration: none;
-      color: #fff;
       font-weight: 600;
       text-transform: uppercase;
-      padding: 10px 15px;
+      padding: 15px;
     }
-
     header ul li a:hover {
-      border-bottom: 2px solid rgb(255, 208, 167);
+      border-bottom: 2px solid rgb(5, 2, 0);
       /* rgb(67,43,39) */
     }
 
+    /* NAV ICON */
     header .menu {
-      font-size: 2.5em;
+      font-size: 2em;
       display: none;
     }
+    i {
+      color: rgba(14, 1, 1, 0.692);
+      cursor: pointer;
+    }
+    #chk1 {
+      display: none;
+    }
+    
 
+    /* Smaller screens */
     @media(max-width:1000px) {
-      .search-box button {
-        position: absolute;
+      header {
+        height: 50px;
+        padding-top: 10px;
       }
-
+      #logo{
+        width: 90px;
+        height: 60px;
+      }
+      /* Nav SWIPE POS */
       header ul {
         position: fixed;
-        top: 100px;
+        top: 50px;
         right: -100%;
-        background: rgba(0, 0, 0, 0.5);
-        height: calc(100vh - 100px);
+        background: rgba(255, 255, 255, 0.5);
+        height: calc(50vh - 100px);
         width: 50%;
         flex-direction: column;
         align-items: center;
         transition: right 0.5s linear;
       }
-
+      /* NAV ICON */
       header .menu {
         display: block;
         width: 100px;
         text-align: center;
       }
-
+      /* FOR NAV (Swipes right) */
       #chk1:checked~ul {
         right: 0;
       }
-     
-
     }
   </style>
 </head>
@@ -198,17 +163,14 @@
     <input type="checkbox" name="" id="chk1">
     <div class="logo">
 
-      <img src="img\logofin.png" alt="ShareABare Logo" width="180" height="100"
+      <img id="logo" src="img\logofin.png" alt="ShareABare Logo" width="180" height="100"
         class="d-inline-block align-text-top"></a>
       </a>
     </div>
     <ul>
       <li><a href="#" class="text-black">Home</a></li>
-      <a class="nav-link text-black" id="dia">◆</a>
       <li><a href="shop.html" class="text-black">Shop</a></li>
-      <a class="nav-link text-black" id="dia">◆</a>
-      <li><a href="" class="text-black">About us</a></li>
-      <a class="nav-link text-black" id="dia">◆</a>
+      <li><a href="" class="text-black">About us</a></li> 
       <li><a href="contactus.html" class="text-black">Contact us</a></li>
       <li>
         <a href="#"><i class="fa fa-facebook"></i></a>
