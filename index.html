@@ -23,6 +23,14 @@
       .fa-facebook {
         color: black;
       }
+      #divider {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(67, 43, 39);
+      padding: 100px 20px 30px;
+      margin-bottom: 0px;
+      /* transform: skewY(-5deg) */
+      }
       
 
     /* body {
@@ -36,32 +44,16 @@
         border: none;
       }
       #divider {
+      height: 1em;
       display: flex;
       flex-direction: column;
       background-color: rgb(67, 43, 39);
       padding: 100px 20px 30px;
       margin-bottom: 0px;
-      transform: skewY(-5deg)
+      /* transform: skewY(-5deg) */
       }
     }
-    
 
-    #divider {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(67, 43, 39);
-      padding: 100px 20px 30px; 
-      margin-bottom: 30px;
-      transform: skewY(-3deg)
-    }
-
-    /* TEST */
-    /* *{
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              font-family: Arial;
-          } */
     body {
       background: url(bg.jpg);
       background-size: cover;
@@ -118,7 +110,7 @@
     #chk1 {
       display: none;
     }
-    
+
 
     /* Smaller screens */
     @media(max-width:1000px) {
@@ -185,7 +177,6 @@
     </div>
   </header>
 
-
   <!-- <nav class="navbar navbar-expand-lg navbar-light p-2" style="background-color:#FFD0A7">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">
@@ -225,7 +216,7 @@
   <img src="img\b1.jpg" class="img-fluid" alt="bg">
 
   <!-- CAROUSEL -->
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -264,7 +255,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
 
 
   <!-- SECTION 1-->
@@ -340,6 +331,17 @@
     </div>
   </section>
 
+
+  <div class="container mt-3">
+    <h2>Thumbnail</h2>
+    <p>The .img-thumbnail class creates a thumbnail of the image:</p>            
+    <img src="img/bearphotos/homepic1.jpg" class="img" alt="beardesign1" width="304" height="236" align="right">
+  </div>
+  <div id="dividerstraight">
+    <footer>
+    </footer>
+  </div>
+
   <div class="col-md-4">
     <img class="img" src="img/bearphotos/homepic1.jpg">
     <p></p>
@@ -392,15 +394,11 @@
   </section>
   </div>
 
-  <!-- DIVIDER -->
-  <div id="divider">
-    <footer>
-    </footer>
-  </div>
-  
+  <footer class="pt-1" style="background-color: rgb(67,43,39)">
+    <a class="text-light"></a>
+  </footer>
 
-  
-  <div class="row" style="background-color:rgb(255,208,167)">
+  <div class="row" style="background-color:rgb(255,208,167);">
     <!-- LOGISTICS -->
     <div class="col-3 p-4 ms-5">
       <h6>Logistics</h6>
@@ -441,17 +439,3 @@
 </body>
 
 </html>
-<!--
-                <div class="col-0 bg-light p-5">
-
-                </div>
-                pt- padding top
-                ps- padding start
-                pe- padding end 
-                
-
-                <
-                    <p class="fw-bold"></p>
-                    fw- font size
-                    d-lg-none - makes the text invisible
-            -->
