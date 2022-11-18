@@ -15,9 +15,7 @@
           background-image: url("/img/bgpattern.jpg");
           background-color: #FFD0A7;
         } */
-
-        
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 1000px) {
           #dia{
             font-size: 0;
             border: none;
@@ -40,7 +38,7 @@
               font-family: Arial;
           } */
           body{
-              /* background: url(bg.jpg); */
+              background: url(bg.jpg);
               background-size: cover;
               height: 100vh;
               background-position: center;
@@ -53,8 +51,8 @@
               align-items: center;
               position: fixed;
               z-index: 99;
-              box-shadow: 0 0 10px #000;
-              background: rgba(0,0,0,0.5);
+              /* box-shadow: 0 0 10px #000; */
+              background: rgba(255, 255, 255, 0.5);
           }
           #chk1{
               display: none;
@@ -89,7 +87,6 @@
               text-align: center;
               
           }
-          
           header ul {
               flex:2;
               display: flex;
@@ -136,7 +133,6 @@
         }
         #chk1:checked ~ ul{
             right: 0;
-
         }
   
 }
@@ -151,17 +147,17 @@
       <header>
         <input type ="checkbox" name ="" id ="chk1">
         <div class="logo">
-          <a class="navbar-brand text-light" href="#">
+          
             <img src="img\logofin.png" alt="ShareABare Logo" width="180" height="100" class="d-inline-block align-text-top"></a>
           </a></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <a class="nav-link text-light" id="dia">◆</a>
-                <li><a href="#">Shop</a></li>
-                <a class="nav-link text-light" id="dia">◆</a>
-                <li><a href="#">About us</a></li>
-                <a class="nav-link text-light" id="dia">◆</a>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#" class="text-black">Home</a></li>
+                <a class="nav-link text-black" id="dia">◆</a>
+                <li><a href="shop.html" class="text-black">Shop</a></li>
+                <a class="nav-link text-black" id="dia">◆</a>
+                <li><a href="" class="text-black">About us</a></li>
+                <a class="nav-link text-black" id="dia">◆</a>
+                <li><a href="contactus.html" class="text-black">Contact us</a></li>
                 <li>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -212,7 +208,7 @@
         </div>
       </nav> -->
 
-      <!-- <img src="img\header\editedheader.jpg" class="img-fluid" alt="bg"> -->
+      <img src="img\b1.jpg" class="img-fluid" alt="bg">
 
       <!-- CAROUSEL -->
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
