@@ -1,151 +1,191 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ShareABear</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="/img/bearlogo.png">
-    <style>
-        *{
-            font-family: cursive;
-          }
-        body {
-          background-image: url("/img/bgpattern.jpg");
-        }
-        @media only screen and (max-width: 900px) {
-          #dia{
-            font-size: 0;
-            border: none;
-          }
-        }
-        #divider {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:   rgb(67,43,39);
-        padding: 100px 20px 30px;
-        transform:skewY(-5deg)
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShareABear</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="/img/bearlogo.png">
+  <style>
+    /* RESPONSIVE FOR SMALL DEVICES */
+    @media only screen and (max-width: 1000px) {
+      #dia {
+        font-size: 0;
+        border: none;
       }
+      
+      #divider {
+      height: 1em;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(67, 43, 39);
+      padding: 100px 20px 30px;
+      margin-bottom: 0px;
+      /* transform: skewY(-5deg) */
+      }
+      #head{
+      background: rgba(255, 255, 255, 0.5);
+      position: fixed;
+      width: 100%;
+      /* STACKING */
+      z-index: 1;
+      padding:0;
+    }
+    }
+    
+    @media(max-width:1000px) {
+      #logo{
+        width: 100px;
+        height: 60px;
+      }
+    }
+    
+    #logo{
+    margin-left: 15px;
+}
 
-    </style>
+    * {
+      font-family: cursive;
+      }
+     /* HEADER ICON COLOR */
+     .fa-twitter {
+        color: black;
+      }
+      .fa-instagram {
+        color: black;
+      }
+      .fa-facebook {
+        color: black;
+      }
+      #divider {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(67, 43, 39);
+      padding: 100px 20px 30px;
+      margin-bottom: 0px;
+      /* transform: skewY(-5deg) */
+      }
+    
+    body {
+      background: url(bg.jpg);
+      background-size: cover;
+      height: 100vh;
+      background-position: center;
+    }
+
+    #head{
+      background: rgba(255, 255, 255, 0.5);
+      position: fixed;
+      width: 100%;
+      /* STACKING */
+      z-index: 1;
+      padding:0;
+    }
+    
+    /* NAV LINKS */
+
+    #linkheader:hover {
+      border-bottom: 2px solid rgb(5, 2, 0);
+      /* rgb(67,43,39) */
+    }
+    #linkheader {
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 15px;
+    }
+    #dia {
+      padding: 15px;
+      }
+  </style>
 </head>
-  <!-- <body style="background-color: rgb(236, 212, 146);"> -->
-    <body>
+<!-- <body style="background-color: rgb(236, 212, 146);"> -->
 
-      <!-- NAVIGATION BARRRRR -->
-      <nav class="navbar navbar-expand-lg navbar-light p-2" style="background-color:rgb(67,43,39)">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">
-            <img src="img\logo.png" alt="ShareABare Logo" width="180" height="45" class="d-inline-block align-text-top"></a>
+<body>
+    
+  <nav id="head" class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(255, 255, 255, 0.5);">
+        
+    <div class="container-fluid">
+          <a class="navbar-brand text-light pb-0" >
+            <img id="logo" src="img\logofin.png" alt="ShareABare Logo" width="150" height="80">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav" >
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pb-0">
               <li class="nav-item pe-5">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-black" id="linkheader" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link text-light" id="dia">◆</a>
+                <a class="nav-link text-black" id="dia">◆</a>
               </li>
               <li class="nav-item pe-5">
-                <a class="nav-link text-light" href="#">Shop</a>
+                <a class="nav-link text-black" id="linkheader" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link text-black" id="dia">◆</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link text-black" id="linkheader" href="contactus.html">Contact Us</a>
               </li>
             </ul>
-            <!-- BUTTONSSSS-->
-            <form class="d-fluid">
-              <button class="btn" style="background-color:rgb(145,76,33)" type="submit">Login</button>
-              <button class="btn" style="background-color:rgb(255,208,167)" type="submit">SignUp</button>
+         
+  <!-- BUTTONSSSS-->
+  <form class="d-fluid">
+              <button class="btn btn-outline-dark" style="background-color:rgb(149,98,53)" type="submit">Login</button>
+              <button class="btn btn-outline-dark" style="background-color:rgb(205,165,124)" type="submit">SignUp</button>
             </form>
           </div>
         </div>
       </nav>
 
 
+  <footer class="pt-1" style="background-color: rgb(67,43,39)">
+    <a class="text-light"></a>
+  </footer>
 
-
-      <div class="container">
-        <div class="row">
-            <div class="col-12 p-5" style="background-color:rgb(234,236,239)">
-                <h1 class="text-center">Welcome to our website!</h1>
-                <h3 class="text-center">Look at this button! Wow, let's click on it!</h3>
-                <div class="d-grid">
-                    <button type="button" class="btn btn-primary btn-block">Learn more</button>
-                  </div>
-            </div>
-        </div>
-        <!-- MIDDLE -->
-        <hr>
-        <div class="row">
-            <div class="col-md-12">
-                <h5>What is Bootstrap? from https://getbootstrap.com/</h5>
-            </div>
-            <div class="col-md-4">
-                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components</p>
-                <img class="img-thumbnail" src="https://images-us.bookshop.org/ingram/9798591281663.jpg?height=500&amp;v=v2">
-            </div>
-            <div class="col-md-4">
-                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components</p>
-                <img class="img-thumbnail" src="https://images-us.bookshop.org/ingram/9798591281663.jpg?height=500&amp;v=v2">
-                
-            </div>
-            <div class="col-md-4">
-                <img class="img-thumbnail" src="img/bearphotos/shop/1.png">
-                <p>₱250</p>
-              </div>
-        </div>
-        <div class="row-md">
-            <hr>
-            <p class="text-center p-2" style="background-color:rgb(212,237,218)">Thanks for Visiting!</p>
-            </div>
-        </div>
-
-
-<div class="row" style="background-color:rgb(255,208,167)">
+  <div class="row" style="background-color:rgb(255,208,167);">
     <!-- LOGISTICS -->
     <div class="col-3 p-4 ms-5">
-        <h6>Logistics</h6>
-        <img src="/img/logistics/2go.png">
-        <img src="/img/logistics/entrego.png">
-        <img src="/img/logistics/jnt.png">
-        <br>
-        <img src="/img/logistics/ninjavan.png">
-        <img src="/img/logistics/gogo.png">
+      <h6>Logistics</h6>
+      <img src="/img/logistics/2go.png">
+      <img src="/img/logistics/entrego.png">
+      <img src="/img/logistics/jnt.png">
+      <br>
+      <img src="/img/logistics/ninjavan.png">
+      <img src="/img/logistics/gogo.png">
     </div>
     <!-- MODE OF PAYMENT -->
     <div class="col-3 p-4 ms-5">
-        <h6>Mode of Payment</h6>
-        <img src="/img/mop/bpi.png">
-        <img src="/img/mop/mastercard.png">
-        <img src="/img/mop/visa.png">
-        <br>
-        <img src="/img/mop/dragonpay.png">
-        <img src="/img/mop/paymaya.png">
+      <h6>Mode of Payment</h6>
+      <img src="/img/mop/bpi.png">
+      <img src="/img/mop/mastercard.png">
+      <img src="/img/mop/visa.png">
+      <br>
+      <img src="/img/mop/dragonpay.png">
+      <img src="/img/mop/paymaya.png">
     </div>
     <!-- APPLICATION -->
-    
-</div>
+    <div class="col-3 p-4 ms-5">
+      <h6>App</h6>
+      <img src="/img/app/google.png">
+      <img src="/img/app/apple.png">
+      <img src="/img/app/appgallery.png">
+    </div>
 
-<footer class="pt-1" style="background-color: rgb(67,43,39)">
-    <a class="text-light">©2022 ShareABear All Rights Reserved.</a>
-</footer>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-   </body>
+  <footer class="pt-1" style="background-color: rgb(67,43,39)">
+    <a class="text-light"></a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
-<!--
-                <div class="col-0 bg-light p-5">
-
-                </div>
-                pt- padding top
-                ps- padding start
-                pe- padding end 
-                
-
-                <
-                    <p class="fw-bold"></p>
-                    fw- font size
-                    d-lg-none - makes the text invisible
-            -->
