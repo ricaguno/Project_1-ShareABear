@@ -10,8 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="/img/bearlogo.png">
   <style>
-    /* RESPONSIVE FOR SMALL DEVICES */
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 200px) {
       #dia {
         font-size: 0;
         border: none;
@@ -38,9 +37,37 @@
 
       #logo {
         width: 100px;
+        height: 50px;
+      }
+
+      #whiteheader {
         height: 60px;
       }
+
     }
+
+    /* RESPONSIVE FOR MED DEVICES */
+    @media only screen and (max-width: 900px) {
+      #whiteheader {
+        height: 90px;
+      }
+      #dia {
+        font-size: 0;
+        border: none;
+      }
+      
+    }
+
+
+    /* RESPONSIVE FOR LARGE DEVICES */
+    @media only screen and (min-width: 1200px) {
+      #whiteheader {
+        width: 100%;
+        height: 91px;
+      }
+      
+    }
+
 
     #logo {
       margin-left: 15px;
@@ -77,7 +104,7 @@
       background-size: cover;
       height: 100vh;
       background-position: center;
-      background-color: rgb(255,208,167);
+      background-color: rgb(255, 208, 167);
     }
 
     #head {
@@ -104,22 +131,23 @@
       height: 18em;
     }
 
-    .card{
+    .card {
       align-items: center;
       outline-style: dashed;
       padding: 10px;
       margin: 20px;
     }
+
     .container {
-    width: 100%;
+      width: 100%;
     }
 
 
     .middle {
       transition: .5s ease;
       opacity: 0;
-      position: absolute; */
-      top: 50%;
+      position: absolute;
+      */ top: 50%;
       left: 50%;
       transform: translate(-50%, 300%);
       /* ms-transform: translate(-50%, -50%); */
@@ -135,8 +163,8 @@
     }
 
     #add {
-      background-color: rgb(205,165,124);
-      outline-style:inherit;
+      background-color: rgb(205, 165, 124);
+      outline-style: inherit;
       color: white;
       font-size: 16px;
       padding: 10px 15px;
@@ -159,13 +187,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item pe-5">
-            <a class="nav-link active text-black" id="linkheader" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link active text-black" id="linkheader" href="/index.html">Home</a>
           </li>
           <li class="nav-item pe-5">
             <a class="nav-link text-black" id="dia">◆</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link text-black" id="linkheader" href="shop.html">Shop</a>
+            <a class="nav-link text-black" id="linkheader" aria-current="page" href="#">Shop</a>
           </li>
           <li class="nav-item pe-5">
             <a class="nav-link text-black" id="dia">◆</a>
@@ -183,124 +211,124 @@
       </div>
     </div>
   </nav>
-  <img src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
+  <img id="whiteheader" src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
 
   <div class="row p-5">
 
 
 
-    
-      <h5>Shop</h5>
 
-      <div class="row g-3 align-items-center">
+    <h5>Shop</h5>
 
-        <!-- class="col-lg-3 col-md-6 col-sm-12 col-xs-12" -->
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/1.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
+    <div class="row g-3 align-items-center">
+
+      <!-- class="col-lg-3 col-md-6 col-sm-12 col-xs-12" -->
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/1.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
           </div>
         </div>
-
-        
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/2.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/3.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/4.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/5.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/6.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/7.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/8.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/9.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="container card">
-            <img id="shopimage" src="/img/bearphotos/shop/10.png" alt="Avatar" class="image" style="width:100%">
-            <p align="center">Heart Bear <br> P250</p>
-            <div class="middle">
-              <div class="btn" id="add">Add to cart</div>
-            </div>
-          </div>
-        </div>
-
-
-
-
       </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/2.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/3.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/4.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/5.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/6.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/7.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/8.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/9.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class="container card">
+          <img id="shopimage" src="/img/bearphotos/shop/10.png" alt="Avatar" class="image" style="width:100%">
+          <p align="center">Heart Bear <br> P250</p>
+          <div class="middle">
+            <div class="btn" id="add">Add to cart</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
 
 
 
