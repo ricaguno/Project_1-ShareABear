@@ -34,10 +34,7 @@
       z-index: 1;
       padding:0;
     }
-    }
-    
-    @media(max-width:1000px) {
-      #logo{
+    #logo{
         width: 100px;
         height: 60px;
       }
@@ -45,7 +42,7 @@
     
     #logo{
     margin-left: 15px;
-}
+    }
 
     * {
       font-family: cursive;
@@ -80,26 +77,19 @@
       background: rgba(255, 255, 255, 0.5);
       position: fixed;
       width: 100%;
+      box-shadow: 0 0 10px #000;
       /* STACKING */
       z-index: 1;
       padding:0;
     }
     
     /* NAV LINKS */
-
-    #linkheader:hover {
-      border-bottom: 2px solid rgb(5, 2, 0);
-      /* rgb(67,43,39) */
-    }
     #linkheader {
       text-decoration: none;
       font-weight: 600;
       text-transform: uppercase;
       padding: 15px;
     }
-    #dia {
-      padding: 15px;
-      }
   </style>
 </head>
 <!-- <body style="background-color: rgb(236, 212, 146);"> -->
@@ -109,14 +99,14 @@
   <nav id="head" class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(255, 255, 255, 0.5);">
         
     <div class="container-fluid">
-          <a class="navbar-brand text-light pb-0" >
+          <a class="navbar-brand text-light" >
             <img id="logo" src="img\logofin.png" alt="ShareABare Logo" width="150" height="80">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav" >
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pb-0">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item pe-5">
                 <a class="nav-link active text-black" id="linkheader" aria-current="page" href="#">Home</a>
               </li>
@@ -143,6 +133,17 @@
         </div>
       </nav>
 
+ 
+  <div class="row">
+    <div class="card p-2">
+      <div class="input-group">
+       <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username with two button addons">
+       <button class="btn btn-secondary" type="button">Redeem</button>
+     </div>
+     </div>
+
+  </div>
+  
 
   <footer class="pt-1" style="background-color: rgb(67,43,39)">
     <a class="text-light"></a>
@@ -187,5 +188,10 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
+
+
+
+
+
 
 </html>
