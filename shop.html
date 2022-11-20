@@ -130,41 +130,34 @@
       padding: 13px;
     }
 
+    /* FOR SHOP PAGE */
     #shopimage {
       height: 18em;
     }
-
     .card {
       align-items: center;
       outline-style: dashed;
       padding: 10px;
       margin: 20px;
     }
-
     .container {
       width: 100%;
     }
-
-
     .middle {
       transition: .5s ease;
       opacity: 0;
       position: absolute;
-      */ top: 50%;
       left: 50%;
       transform: translate(-50%, 300%);
       /* ms-transform: translate(-50%, -50%); */
       text-align: center;
     }
-
     .container:hover #shopimage {
       opacity: 0.3;
     }
-
     .container:hover .middle {
       opacity: 1;
     }
-
     #add {
       background-color: rgb(205, 165, 124);
       outline-style:inset;
@@ -268,16 +261,11 @@
   </nav>
   <img id="whiteheader" src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
 
+  
   <div class="row p-5">
-
-
-
-
+    
     <h5>Shop</h5>
 
-    <div class="row g-3 align-items-center">
-
-      <!-- class="col-lg-3 col-md-6 col-sm-12 col-xs-12" -->
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <div class="container card">
           <img id="shopimage" src="/img/bearphotos/shop/1.png" alt="Avatar" class="image" style="width:100%">
@@ -379,18 +367,27 @@
           </div>
         </div>
       </div>
-
-
-
-
+      <br><br>
+      <!-- PAGINATION -->
+      <nav aria-label="Page navigation example" style="margin-left:40%;">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" style="background-color: rgb(67,43,39);" href="#">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </a>
+        </li>
+      </ul>
+    </nav>
     </div>
-
-
-
     <footer class="pt-1" style="background-color: rgb(67,43,39)">
       <a class="text-light"></a>
     </footer>
-
     <div class="row" style="background-color:rgb(255,208,167);">
       <!-- LOGISTICS -->
       <div class="col-3 p-4 ms-5">
@@ -419,10 +416,10 @@
         <img src="/img/app/apple.png">
         <img src="/img/app/appgallery.png">
       </div>
-
+  
     </div>
-
-    <footer class="pt-1" style="background-color: rgb(67,43,39)">
+  
+    <footer class="pt-1 m-0" style="background-color: rgb(67,43,39)">
       <a class="text-light"></a>
     </footer>
 
