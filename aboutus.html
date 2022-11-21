@@ -118,6 +118,8 @@
     }
 
     /* NAV LINKS */
+
+
     #linkheader {
       text-decoration: none;
       font-weight: 600;
@@ -126,6 +128,42 @@
     }
     #dia{
       padding: 13px;
+    }
+
+    /* FOR SHOP PAGE */
+    #shopimage {
+      height: 18em;
+    }
+    .card {
+      align-items: center;
+      outline-style: dashed;
+      padding: 10px;
+      margin: 20px;
+    }
+    .container {
+      width: 100%;
+    }
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 300%);
+      /* ms-transform: translate(-50%, -50%); */
+      text-align: center;
+    }
+    .container:hover #shopimage {
+      opacity: 0.3;
+    }
+    .container:hover .middle {
+      opacity: 1;
+    }
+    #add {
+      background-color: rgb(205, 165, 124);
+      outline-style:inset;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      padding: 10px 15px;
     }
 
      /* FOR MODAL */
@@ -140,6 +178,13 @@
       margin-left: 35%;
       margin-top: 5%;
       margin-bottom: 5%;
+    }
+    #cardabout{
+        text-align: center;
+        padding: 50px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 5%;
     }
   </style>
 </head>
@@ -201,16 +246,19 @@
             <a class="nav-link text-black" id="dia">◆</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link text-black" id="linkheader" aria-current="page" href="/shop.html">Shop</a>
+            <a class="nav-link text-black" id="linkheader" aria-current="page" href="#">Shop</a>
           </li>
           <li class="nav-item pe-5">
             <a class="nav-link text-black" id="dia">◆</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link text-black" id="linkheader" href="#">Contact Us</a>
+            <a class="nav-link text-black" id="linkheader" href="contactus.html">Contact Us</a>
           </li>
           <li class="nav-item pe-5">
-            <a class="nav-link text-black" id="linkheader" href="aboutus.html">About Us</a>
+            <a class="nav-link text-black" id="dia">◆</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link text-black" id="linkheader" href="#">About Us</a>
           </li>
         </ul>
 
@@ -224,7 +272,35 @@
       </div>
     </div>
   </nav>
-  
+  <img id="whiteheader" src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
+
+  <div class="card" id="cardabout" style="width: 90%;">
+    <div class="card-body">
+      <h2 class="card-title">About us</h2><br>
+      <h5 class="card-text"><b>How we started</b> <br><br>
+        Before this year comes to a close, let’s take a trip down memory lane and discover how the MAGIC started…<br>
+        <br>
+        
+        More than three decades have past since your Magician in Blue waved its wand up high to cast a mystical spell that brought Blue Magic to life.
+        <br><br>
+        From then on, it has always been our best interest to uplift the art of gift-giving as part of the Filipino culture of celebration, warmth, generosity, and LOVE.
+        <br><br>
+        With 35 branches to date, Blue Magic continues to rage! Blue Magic forges on, creating extraordinary gifts to bring nothing but fond memories and overflowing happiness to many.
+        <br><br>
+        Time really does fly swiftly, and 2018 has been a glorious journey. We extend our sincere appreciation to you, who has walked with us through all these MAGICAL years.
+        <br><br><br>
+        
+
+        Make someone smile today. Share a Bear today! <br></h5>
+      <a href="/shop.html" class="card-link">Shop now</a>
+    </div>
+  </div>
+
+
+
+
+
+
     <footer class="pt-1" style="background-color: rgb(67,43,39)">
       <a class="text-light"></a>
     </footer>
