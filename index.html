@@ -108,14 +108,13 @@
     }
 
     #head {
-      background: rgba(255, 255, 255, 0.5);
-      position: fixed;
-      width: 100%;
-      box-shadow: 0 0 10px #000;
-      /* STACKING */
-      z-index: 1;
-      padding: 0;
-    }
+        background: rgba(255, 255, 255, 0.5);
+        position: fixed;
+        width: 100%;
+        /* STACKING */
+        z-index: 1;
+        padding: 0;
+      }
 
     /* NAV LINKS */
     #linkheader {
@@ -245,7 +244,7 @@
   <br>
   <br>
   <!-- DIVVV -->
-  <div class="container card mt-4 mb-4" style="background-color:rgba(245, 236, 227, 0.877); outline-style:dashed;">
+  <div class="container card mt-4 mb-4" style="background-color:rgba(245, 236, 227, 0.877); outline-style:groove;">
     <h4 align="center" class="pt-3">"Let's share the love by purchasing a pair of specially designed bear plushies, one
       for you and the other to be donated to our chosen charity! 🧸"</h5>
       </p>
@@ -290,7 +289,7 @@
 
             <div class="row p-4">
 
-              <h3>Our Bear Collections:</h3>
+              <h3 href="#">Our Bear Collections:</h3>
               <div class="mb-3 mt-2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="container card" style="border-radius:15%; border:#000; border-style:groove;">
                   <img id="shopimage" src="/img/bearphotos/shop/1.png" alt="Avatar" class="image" style="width:100%">
@@ -382,7 +381,7 @@
                   </div>
 
                   <div class="col-md-4 mb-3">
-                    <div id="carouselrad" class="card" style="border-radius: 15%; border-color: #000;">
+                    <div id="carouselrad" class="card" style="border-radius: 15%; border:#000; border-style:groove;">
                       <img id="carouselrad" class="img-fluid" alt="100%x280" style="border-radius: 15%; border:#000; border-style:groove;"
                       src="/img/feedbacks/con3.jpg">
                       <div class="card-body">
@@ -398,7 +397,7 @@
                 <div class="row">
 
                   <div class="col-md-4 mb-3">
-                    <div id="carouselrad" class="card" style="border-radius: 15%; border-color: #000;">
+                    <div id="carouselrad" class="card" style="border-radius: 15%; border:#000; border-style:groove;">
                       <img id="carouselrad" class="img-fluid" alt="100%x280" style="border-radius: 15%; border:#000; border-style:groove;"
                       src="/img/feedbacks/con4.jpg">
                       <div class="card-body">
@@ -409,7 +408,7 @@
                   </div>
                   
                   <div class="col-md-4 mb-3">
-                    <div id="carouselrad" class="card" style="border-radius: 15%; border-color: #000;">
+                    <div id="carouselrad" class="card" style="border-radius: 15%; border:#000; border-style:groove;">
                       <img id="carouselrad" class="img-fluid" alt="100%x280" style="border-radius: 15%; border:#000; border-style:groove;"
                       src="/img/feedbacks/con5.jpg">
                       <div class="card-body">
@@ -420,7 +419,7 @@
                   </div>
 
                   <div class="col-md-4 mb-3">
-                    <div id="carouselrad" class="card" style="border-radius: 15%; border-color: #000;">
+                    <div id="carouselrad" class="card" style="border-radius: 15%; border:#000; border-style:groove;">
                       <img id="carouselrad" class="img-fluid" alt="100%x280" style="border-radius: 15%; border:#000; border-style:groove;"
                       src="/img/feedbacks/con6.jpg">
                       <div class="card-body">
@@ -443,23 +442,45 @@
 
 
 
-  <footer class="pt-1" style="background-color: rgb(67,43,39)">
-    <a class="text-light"></a>
+  <footer class="pt-2 pb-1 pl-3" style="background-color: rgb(67,43,39)">
+    <p class="text-light">Get connected with us on social networks:
+      <i class="fa-brands fa-square-facebook fa-2x mr-2"></i>
+      <i class="fa-brands fa-square-instagram fa-2x mr-2"></i>
+      <i class="fa-brands fa-square-twitter fa-2x mr-2"></i>
+      <i class="fa-brands fa-tiktok fa-2x"></i>
+      
+    </p>
   </footer>
 
-  <div class="row" style="background-color:rgb(255,208,167);">
+  <div class="row" style="background-image:url(/img/whiteheader.jpg)">
     <!-- LOGISTICS -->
-    <div class="col-3 p-4 ms-5">
-      <h6>Logistics</h6>
+    <div class="col-2 ps-2 pt-3 ms-5">
+
+      <a class="navbar-brand text-light">
+        <img id="logo" src="img\logofin.png" alt="ShareABare Logo" width="150" height="80">
+      </a>
+      
+      <!-- <h6>Logistics</h6>
       <img src="/img/logistics/2go.png">
+      <span class="seprator"></span>
       <img src="/img/logistics/entrego.png">
       <img src="/img/logistics/jnt.png">
       <br>
       <img src="/img/logistics/ninjavan.png">
-      <img src="/img/logistics/gogo.png">
+      <img src="/img/logistics/gogo.png"> -->
+      
     </div>
+
+    <!-- APPLICATION -->
+    <div class="col-2 p-4 ms-5">
+      <h6>App</h6>
+      <p><i class="fa-brands fa-google-play fa-2x"></i> Google play</p>
+      <p><i class="fa-brands fa-apple fa-2x"></i> Apple store</p>
+      <p><i class="fa-brands fa-app-store fa-2x"></i> App store</p>
+    </div>
+
     <!-- MODE OF PAYMENT -->
-    <div class="col-3 p-4 ms-5">
+    <div class="col-2 p-4 ms-5">
       <h6>Mode of Payment</h6>
       <img src="/img/mop/bpi.png">
       <img src="/img/mop/mastercard.png">
@@ -468,18 +489,21 @@
       <img src="/img/mop/dragonpay.png">
       <img src="/img/mop/paymaya.png">
     </div>
-    <!-- APPLICATION -->
-    <div class="col-3 p-4 ms-5">
+
+    
+
+
+    <div class="col-2 p-4 ms-5">
       <h6>App</h6>
-      <img src="/img/app/google.png">
-      <img src="/img/app/apple.png">
-      <img src="/img/app/appgallery.png">
+      <i class="fa-brands fa-google-play"> Google play</i>
+      <i class="fa-brands fa-apple"> Apple store</i>
+      <i class="fa-brands fa-app-store"> App store</i>
     </div>
 
   </div>
 
   <footer class="pt-1 m-0" style="background-color: rgb(67,43,39)">
-    <a class="text-light"></a>
+    <p class="text-light" align="center">©2022 Copyright: ShareABear</p>
   </footer>
 
 
