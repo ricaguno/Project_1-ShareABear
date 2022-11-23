@@ -19,16 +19,6 @@
         border: none;
       }
 
-      #divider {
-        height: 1em;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(67, 43, 39);
-        padding: 100px 20px 30px;
-        margin-bottom: 0px;
-        /* transform: skewY(-5deg) */
-      }
-
       #head {
         background: rgba(255, 255, 255, 0.5);
         position: fixed;
@@ -54,14 +44,17 @@
       #whiteheader {
         height: 90px;
       }
-
       #dia {
         font-size: 0;
         border: none;
       }
-
+      #pagination {
+      padding-left: 30%;
     }
-
+    #shoptxt {
+      margin-left: 46%;
+    }
+    }
 
     /* RESPONSIVE FOR LARGE DEVICES */
     @media only screen and (min-width: 1200px) {
@@ -69,9 +62,13 @@
         width: 100%;
         height: 91px;
       }
-
+      #pagination {
+      padding-left: 43%;
     }
-
+    #shoptxt {
+      margin-left: 42%;
+    }
+    }
 
     #logo {
       margin-left: 15px;
@@ -94,23 +91,11 @@
       color: black;
     }
 
-    #divider {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(67, 43, 39);
-      padding: 100px 20px 30px;
-      margin-bottom: 0px;
-      /* transform: skewY(-5deg) */
-    }
-
     body {
-      /* background-color: rgb(255, 208, 167); */
       background-image: url(/img/brown.jpg);
       background-size: cover;
       height: 100vh;
       background-position: center;
-      /* background-image: url(/img/bgpattern.jpg) */
-      /* background-color: rgb(255,208,167); */
     }
 
     #head {
@@ -124,8 +109,6 @@
     }
 
     /* NAV LINKS */
-
-
     #linkheader {
       text-decoration: none;
       font-weight: 600;
@@ -194,17 +177,16 @@
       margin-top: 5%;
       margin-bottom: 5%;
     }
-
     #shoptxt {
-      margin-left: 43%;
+      margin-left: 42%;
     }
 
-    #pagination {
-      padding-left: 43%;
-    }
+    
+    
+
+   
   </style>
 </head>
-
 <body>
   <!-- MODAL FORM -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -281,7 +263,6 @@
           </li>
         </ul>
 
-
         <!-- BUTTONSSSS-->
         <form class="d-fluid m-3">
           <!-- Button trigger modal -->
@@ -295,15 +276,13 @@
   </nav>
 
   <img id="whiteheader" src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
-
-
   <div class="row p-5">
-
 
     <div id="shoptxt" class="container card mt-4 mb-4"
       style="background-color:rgba(245, 236, 227, 0.877); outline-style:groove; width: 20%;">
       <h2 align="center"><b>Shop</b></h2>
     </div>
+    
 
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle ms-3" type="button" id="dropdownMenuButton1"
@@ -328,7 +307,6 @@
       </div>
     </div>
 
-
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
       <div class="container card">
         <img id="shopimage" src="/img/bearphotos/shop/2.png" alt="Avatar" class="image" style="width:100%">
@@ -338,7 +316,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
       <div class="container card">
@@ -420,6 +397,7 @@
       </div>
     </div>
     <br><br>
+
     <!-- PAGINATION -->
     <nav id="pagination" aria-label="Page navigation example">
       <ul class="pagination">
@@ -463,8 +441,6 @@
       <p><i class="fa-brands fa-app-store fa-lg"></i> AppStore</p>
     </div>
 
-
-
     <div id="foot" class="col-2 pt-2 ms-5">
       <h6 class="mt-3" id="underlinetxt">Useful links</h6><br>
       <a href="#" class="link-dark">Services</a><br>
@@ -505,8 +481,4 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
-
-
-
-
 </html>
