@@ -26,14 +26,12 @@
         background-color: rgb(67, 43, 39);
         padding: 100px 20px 30px;
         margin-bottom: 0px;
-        /* transform: skewY(-5deg) */
       }
 
       #head {
         background: rgba(255, 255, 255, 0.5);
         position: fixed;
         width: 100%;
-        /* STACKING */
         z-index: 1;
         padding: 0;
       }
@@ -49,7 +47,6 @@
 
     }
 
-    /* RESPONSIVE FOR MED DEVICES */
     @media only screen and (max-width: 900px) {
       #whiteheader {
         height: 90px;
@@ -62,7 +59,6 @@
     }
 
 
-    /* RESPONSIVE FOR LARGE DEVICES */
     @media only screen and (min-width: 1200px) {
       #whiteheader {
         width: 100%;
@@ -75,7 +71,6 @@
       margin-left: 15px;
     }
 
-    /* HEADER ICON COLOR */
     .fa-twitter {
       color: black;
     }
@@ -94,17 +89,13 @@
       background-color: rgb(67, 43, 39);
       padding: 100px 20px 30px;
       margin-bottom: 0px;
-      /* transform: skewY(-5deg) */
     }
 
     body {
-      /* background-color: rgb(255, 208, 167); */
       background-image: url(/img/brown.jpg);
       background-size: cover;
       height: 100vh;
       background-position: center;
-      /* background-image: url(/img/bgpattern.jpg) */
-      /* background-color: rgb(255,208,167); */
     }
 
     #head {
@@ -120,7 +111,6 @@
     font-family: 'Itim', cursive;
     }
 
-    /* NAV LINKS */
 
     #linkheader {
       text-decoration: none;
@@ -132,7 +122,6 @@
       padding: 13px;
     }
 
-    /* FOR SHOP PAGE */
     #shopimage {
       height: 18em;
     }
@@ -150,7 +139,6 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%, 300%);
-      /* ms-transform: translate(-50%, -50%); */
       text-align: center;
     }
     .container:hover #shopimage {
@@ -167,7 +155,6 @@
       padding: 10px 15px;
     }
 
-     /* FOR MODAL */
      #logintxt{
       margin-left: 40%;
     }
@@ -191,7 +178,6 @@
 </head>
 
 <body>
-<!-- MODAL FORM -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -267,9 +253,7 @@
       </ul>
 
 
-      <!-- BUTTONSSSS-->
       <form class="d-fluid m-3">
-        <!-- Button trigger modal -->
         <button type="button" class="btn btn-outline-dark text-white" style="background-color:rgb(67,43,39);"
           data-bs-toggle="modal" data-bs-target="#exampleModal">
           Login
@@ -280,7 +264,7 @@
 </nav>
   <img id="whiteheader" src="/img/whiteheader.jpg" class="img-fluid" alt="bg">
 
-   <!-- CARD -->
+   
 
    <div class="card" id="cardabout" style="width: 90%;">
    <div class="row p-4">
@@ -298,7 +282,6 @@
           </div>
         </div>
     </div>
-    <!-- 2ND CARD -->
     <div class="col-12 col-md-4 col-lg-4 pt-4">
       <div class="card text-center pb-2">
         <div class="card-body">
@@ -311,7 +294,6 @@
       </div>
   </div>
 
-    <!-- 3RD CARD -->
     <div class="col-12 col-md-4 col-lg-4 pt-4">
       <div class="card text-center pb-2">
         <div class="card-body">
@@ -341,7 +323,6 @@
   </footer>
 
   <div class="row" style="background-image:url(/img/brownfooter.jpg)">
-    <!-- LOGISTICS -->
     <div class="col-2 pt-3 ms-3">
 
       <a class="navbar-brand text-light">
@@ -349,7 +330,6 @@
       </a>
     </div>
 
-    <!-- APPLICATION -->
     <div id="foot" class="col-2 pt-4 ms-5">
       <h6 id="underlinetxt" class="mb-3">App</h6>
       <p><i class="fa-brands fa-google-play fa-lg"></i> GooglePlay</p>
@@ -367,7 +347,6 @@
       <a href="#" class="link-dark">Help</a>
     </div>
 
-    <!-- MODE OF PAYMENT -->
     <div id="foot" class="col-2 pt-2 ms-5">
       <h6  class="mt-3" id="underlinetxt">Mode of Payment</h6><br>
       <img src="/img/mop/bpi.png">
@@ -399,8 +378,4 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"></script>
 </body>
-
-
-
-
 </html>

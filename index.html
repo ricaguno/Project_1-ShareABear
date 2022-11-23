@@ -12,13 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Itim&family=Nerko+One&display=swap" rel="stylesheet">
-  <!-- for the carousel to work -->
-  <script type='text/javascript'
-    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
   <link rel="icon" type="image/x-icon" href="/img/bearlogo.png">
 
   <style>
-    /* RESPONSIVE FOR SMALL DEVICES */
     @media only screen and (max-width: 1000px) {
       #dia {
         font-size: 0;
@@ -29,7 +25,6 @@
         position: fixed;
         width: 100%;
         box-shadow: 0 0 10px #000;
-        /* STACKING */
         z-index: 1;
         padding: 0;
       }
@@ -43,7 +38,6 @@
       margin-left: 15px;
     }
 
-    /* HEADER ICON COLOR */
     .fa-twitter {
       color: black;
     }
@@ -75,12 +69,10 @@
       position: fixed;
       width: 100%;
       box-shadow: 0 0 10px #000;
-      /* STACKING */
       z-index: 1;
       padding: 0;
     }
 
-    /* NAV LINKS */
     #linkheader {
       text-decoration: none;
       font-weight: 600;
@@ -92,7 +84,6 @@
       padding: 13px;
     }
 
-    /* FOR MODAL */
     #logintxt {
       margin-left: 40%;
     }
@@ -127,7 +118,6 @@
 </head>
 
 <body>
-  <!-- MODAL FORM -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -201,9 +191,7 @@
           </li>
         </ul>
 
-        <!-- BUTTONSSSS-->
         <form class="d-fluid m-3">
-          <!-- Button trigger modal -->
           <button type="button" class="btn btn-outline-dark text-white" style="background-color:rgb(67,43,39);"
             data-bs-toggle="modal" data-bs-target="#exampleModal">
             Login
@@ -218,14 +206,12 @@
 
   <br>
   <br>
-  <!-- DIVVV -->
   <div class="container card mt-4 mb-4" style="background-color:rgba(245, 236, 227, 0.877); outline-style:groove;">
     <h4 align="center" class="pt-3">"Let's share the love by purchasing a pair of specially designed bear plushies, one
       for you and the other to be donated to our chosen charity! 🧸"</h5>
       </p>
   </div>
 
-  <!-- SECTION 1-->
   <section id="grad1" class="pt-4">
     <div class="container text-black">
       <div class="row">
@@ -233,7 +219,6 @@
             <img id="conimg" src="img/con2.jpg" style="border: 5px solid rgb(0, 0, 0); border-radius: 15%; border-color: #000;" alt="BearPhoto1" class="img-fluid col-md-9 col-lg-12 mb-5">
         </div>
         <div class="col-lg-7 col-md-8 mb-5">
-          <!-- col-md-12 col-12 ps-lg-5 mt-md-5 -->
           <div class="text pt-2 ms-5">
             <h2>Our Mission</h2>
             <p>
@@ -255,7 +240,6 @@
     </div>
   </section>
 
-  <!-- SKEW -->
   <header>
     <div id="divider"></div>
   </header>
@@ -263,7 +247,6 @@
   <section id="grad1">
     <div class="container text-black">
       <div class="row">
-        <!-- CARD TEXT -->
         <section>
           <div class="container text-black">
 
@@ -310,13 +293,11 @@
     </div>
   </section>
 
-  <!-- Divider -->
   <header>
     <div id="divider" class="mt-3"></div>
   </header>
 
 
-  <!-- CARD -->
   <div class="row p-4">
     <h2 class="text ms-3">News:</h2>
     <div class="col-12 col-md-4 col-lg-4 pt-4">
@@ -331,7 +312,6 @@
           </div>
       </div>
   </div>
-    <!-- 2ND CARD -->
     <div class="col-12 col-md-4 col-lg-4 pt-4">
       <div class="card text-center pb-2" style="border-radius: 15%; border:#000; border-style:groove;">
           <div class="card-body">
@@ -346,11 +326,8 @@
           </div>
       </div>
   </div>
+  
 
-  </h4>
-                      
-
-    <!-- 3RD CARD -->
     <div class="col-12 col-md-4 col-lg-4 pt-4">
       <div class="card text-center pb-2" style="border-radius: 15%; border:#000; border-style:groove;">
           <div class="card-body">
@@ -365,132 +342,11 @@
   </div>
   </div>
 
-  <!-- CAROUSEL -->
-  <!-- <section class="pt-4 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h3>Spreading happiness is our mission!</h3>
-        </div>
-        <div class="col-6 text-right">
-          <a class="btn btn-primary mb-3 mr-1" style="background-color:rgb(51,22,10);"
-            href="#carouselExampleIndicators2" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          <a class="btn btn-primary mb-3" style="background-color:rgb(51,22,10);" href="#carouselExampleIndicators2"
-            role="button" data-slide="next">
-            <i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-        <div class="col-12">
-          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con1.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">Donating bears program</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con2.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">Donating bears program</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con3.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">Donating bears program</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con4.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">Donating bears program</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con5.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">asdasdas</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card" style="border-radius: 15%; border:#000; border-style:groove;">
-                      <img class="img-fluid" alt="100%x280"
-                        style="border-radius: 15%; border:#000; border-style:groove;" src="/img/feedbacks/con6.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">Donating bears program</h4>
-                        <p class="card-text">Thanks to the generosity of people like you. And when you donate to a cause
-                          you care about, you'll know that your decision to donate is making a tangible impact on the
-                          lives of those the charity helps.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <div align="right" class="mt-2">
     <a href="#" class="btn"><i class="fa-solid fa-circle-arrow-up fa-3x"></i></a>
   </div>
 
   
-
-
-
-
   <footer class="pt-3 pb-1 pl-3" style="background-color: rgb(67,43,39)">
     <p class="text-light">Get connected with us on social networks:
       <i class="fa-brands fa-square-facebook fa-lg mr-2"></i>
@@ -501,7 +357,7 @@
   </footer>
 
   <div class="row" style="background-image:url(/img/brownfooter.jpg)">
-    <!-- LOGISTICS -->
+  
     <div class="col-2 pt-3 ms-3">
 
       <a class="navbar-brand text-light">
@@ -509,7 +365,7 @@
       </a>
     </div>
 
-    <!-- APPLICATION -->
+  
     <div id="foot" class="col-2 pt-4 ms-5">
       <h6 id="underlinetxt" class="mb-3">App</h6>
       <p><i class="fa-brands fa-google-play fa-lg"></i>GooglePlay</p>
@@ -527,7 +383,7 @@
       <a href="#" class="link-dark">Help</a>
     </div>
 
-    <!-- MODE OF PAYMENT -->
+ 
     <div id="foot" class="col-2 pt-2 ms-5">
       <h6 class="mt-3" id="underlinetxt">Mode of Payment</h6><br>
       <img src="/img/mop/bpi.png">
@@ -560,5 +416,4 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
